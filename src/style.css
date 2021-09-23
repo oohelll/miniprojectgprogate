@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.judul {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.nav-list li {
+    padding: 10px 0px;
+    cursor: pointer;
+}
+
+.heading {
+    text-align: center;
+    padding: 6%;
+    background-color: rgb(214, 214, 214);
+}
+
+.heading h2 {
+    margin-bottom: 25px;
+}
+
+.btn {
+    background-color: rgb(66, 66, 255);
+    color: rgba(221, 221, 221, 0.925);
+    border-radius: 3px;
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.article-title {
+    padding: 35px 0px;
+    margin-left: 3%;
+}
+
+article {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+article:nth-child(3) {
+    border-bottom: 1px solid rgb(167, 167, 167);
+}
+
+.article-item {
+    background-color: rgb(66, 66, 255);
+    color: rgb(221, 221, 221);
+    padding: 35px;
+    margin-bottom: 50px;
+    width: 25%;
+}
+
+.article-item p {
+    margin-bottom: 10px;
+}
+
+.article-item a {
+    color: rgba(221, 221, 221, 0.925);
+    text-decoration: none;
+    display:block;
+    text-align: center;
+}
+
+footer {
+    margin: 15px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.right-footer {
+    display: flex;
+    /* margin-left: 700px; */
+}
+
+.first-list {
+    margin-right: 60px;
+}
+
+.first-list h2, .first-list p, .second-list h2, .second-list p {
+    margin-bottom: 5%;
+}
+
+@media (max-width: 900px) {
+    .judul h1 {
+        font-size: 29px;
+    }
+
+    .nav-list li {
+        font-size: 16px;
+    }
+
+    .heading h2 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 7px;
+    }
+
+    .article-title h2 {
+        font-size: 20px;
+    }
+
+    .article-item {
+        font-size: 14px;
+    }
+
+    .left-footer h1 {
+        font-size: 29px;
+    }
+
+    .first-list h2, .second-list h2 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .first-list p, .second-list p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 700px){
+    article {
+        flex-wrap: wrap;
+    }
+
+    .article-item {
+        width: 55%;
+    }
+}
+
+@media (max-width: 500px) {
+    .judul h1 {
+        font-size: 25px;
+    }
+
+    .nav-list li {
+        font-size: 14px;
+    }
+
+    .heading {
+        padding: 10%;
+    }
+
+    .heading h2, .article-title h2 {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 7px;
+    }
+
+    .article-item {
+        width: 70%;
+    }
+
+    .article-title h2 {
+        font-size: 24px;
+    }
+
+    .article-item p:nth-child(1) {
+        font-size: 18px;
+    }
+
+    .article-item {
+        font-size: 14px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-footer {
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .left-footer h1 {
+        font-size: 24px;
+    }
+
+    .right-footer {
+        /* flex-direction: column; */
+        margin: auto;
+    }
+
+    .first-list h2, .second-list h2 {
+        font-size: 21px;
+    }
+
+    .first-list p, .second-list p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 400px) {
+    .right-footer {
+        flex-direction: column;
+    }
+
+    .first-list, .second-list {
+        margin: auto;
+    }
+}
